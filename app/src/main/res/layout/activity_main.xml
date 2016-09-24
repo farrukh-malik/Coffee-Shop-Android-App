@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/country_gardens_2"
+    tools:context="com.example.sayla.mycoffeeshopapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+
+    <TextView
+        android:id="@+id/topping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPPINGS"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="#0000FF"/>
+
+    <CheckBox
+        android:textColor="#FFFFFF"
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topping"
+        android:text="Whiped Cream"
+        android:layout_margin="15dp"
+
+        />
+
+    <CheckBox
+        android:textColor="#FFFFFF"
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:layout_below="@id/checkBox1"
+        android:layout_margin="15dp"
+
+        />
+
+
+    <TextView
+        android:textColor="#0000FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20sp"
+        android:layout_below="@id/checkBox2"
+        android:id="@+id/quant"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/quant"
+        android:id="@+id/btnpanel"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/plus"/>
+
+        <TextView
+            android:textColor="#0000FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:id="@+id/q"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/minus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/boarder"
+        android:visibility="invisible"
+        android:id="@+id/report"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnpanel">
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:Farukh Malik"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhipedCreame"
+            android:textSize="20sp"
+            android:id="@+id/whip"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+            android:textSize="20sp"
+            android:id="@+id/cofee"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qunatity:"
+            android:textSize="20sp"
+            android:id="@+id/quan"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="20sp"
+            android:id="@+id/total"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/order"/>
+
+    </RelativeLayout>
+</RelativeLayout>
